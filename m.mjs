@@ -6,7 +6,7 @@ const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 async function main() {
   // 1. Read all_leads.json
-  const jsonUrl = new URL("./all_leads.json", import.meta.url);
+  const jsonUrl = new URL("./aug.json", import.meta.url);
   const jsonText = await fs.readFile(jsonUrl, "utf8");
   const leadsData = JSON.parse(jsonText);
 
